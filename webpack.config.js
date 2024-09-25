@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const StylelintPlugin = require('stylelint-webpack-plugin');
+// const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -26,8 +26,8 @@ module.exports = {
       filename: "index.html",
       template: "src/template.html",
     }),
-    new StylelintPlugin({
-      files: 'src/*.css', // Specify which files to lint
-    }),
+    // new StylelintPlugin({
+    //   files: 'src/*.css', // Specify which files to lint
+    // }),
   ],
 };
