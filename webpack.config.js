@@ -18,6 +18,10 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,  // Image file types
+        type: 'asset/resource',             // Handles moving images to the output directory
+      },
     ],
   },
   plugins: [

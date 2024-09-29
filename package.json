@@ -12,10 +12,11 @@
   "description": "",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
     "globals": "^15.9.0",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",
-    "webpack": "^5.94.0",
+    "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4"
   },
   "json.schemaDownload.enable": false
