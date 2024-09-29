@@ -1,3 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
-  background:aqua;
+  background: url(/src/assets/ClearSky.jpg);
+  background-size: cover;
+  font-family: "Roboto", "Courier";
+  color: white;
+}
+/* Header */
+.header {
+  width: 100vw;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.605)
+  );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.37);
+}
+.search {
+  position: relative;
+  width: 500px;
+}
+#searchbar {
+  width: 100%;
+  padding: 12px 16px; /* Add padding for the icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+    3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; /* Hides the 'X' button in WebKit browsers */
+}
+input[type="search"] {
+  -webkit-appearance: none; /* Optional: Also removes default WebKit styling for search inputs */
+  appearance: none;
+}
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #888;
+}
+.time {
+  font-size: 72px;
+  text-shadow: 4px 6px 10.3px rgb(49, 48, 48);
+}
+.date {
+  font-size: 32px;
+  text-shadow: 3px 4px 5.3px rgb(64, 64, 64);
+}
+.logo > img {
+  width: 210px;
+  height: 110px;
 }
